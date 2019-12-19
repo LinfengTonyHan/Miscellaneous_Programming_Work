@@ -1,8 +1,8 @@
 function [recallTimes, recallPosition] = cRecallProb(studyList, recallList)
 %% This function calculates the number of times and positions that words in a list get recalled
 % studyList 
-size_s = size(studyList,2);
-size_r = size(recallList,2);
+size_s = length(studyList);
+size_r = length(recallList);
 
 recallTimes = zeros(1, size_s);
 recallPosition = {};
